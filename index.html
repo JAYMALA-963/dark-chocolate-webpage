@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Your Favourite Chocolate | MyFavoriteChocolate.com</title>
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" media="screen and (max-width: 1100px)" href="phone.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Emilys+Candy&display=swap" rel="stylesheet">
+    <!-- <style>
+        /* css reset rules */
+
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Emilys Candy', cursive;
+            text-shadow: 1px 1px 30px rgb(255, 225, 0);
+        }
+
+        /* Navigation bar */
+
+        #navbar {
+            display: flex;
+            align-items: center;
+            position: absolute;
+            width: 100%;
+            flex-direction: column;
+
+        }
+
+        #navbar::before {
+            content: "";
+            background-color: rgb(62, 0, 0);
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.7;
+            top: 0px;
+            left: 0px;
+        }
+
+        /* navigation bar: logo and image */
+
+        #logo {
+            margin: 6px 34px;
+        }
+
+        #logo img {
+            height: 70px;
+            width: 70px;
+            border-radius: 300px;
+        }
+
+        /* navigation bar: list styling */
+
+        #navbar ul {
+            display: flex;
+        }
+
+
+        #navbar ul li {
+            list-style: none;
+            font-size: 1rem;
+        }
+
+        #navbar ul li a {
+            color: lightyellow;
+            display: block;
+            padding: 0.3em 0.4em;
+            border-radius: 20px;
+            text-decoration: none;
+            text-shadow: 1px 1px 10px rgb(255, 225, 0);
+        }
+
+        #navbar ul li a:hover {
+            color: rgb(111, 0, 0);
+            background-color: white;
+            display: block;
+            padding: 0.3em 10.9em;
+            border-radius: 20px;
+            border-radius: 450px 10px / 500px;
+            text-decoration: none;
+        }
+
+        /* Home Section */
+
+        #home {
+            /* position: relative; */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 0.1em 1em;
+            height: 99vh;
+        }
+
+        #home::before {
+            content: "";
+            background: url('choco_bg7.jpg') no-repeat center center/cover;
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.9;
+            top: 0px;
+            left: 0px;
+        }
+
+        #home h1 {
+            color: lightyellow;
+            text-align: center;
+            /* margin-top: 6em; */
+        }
+
+        #home p {
+            color: lightyellow;
+            text-align: center;
+            font-size: 1.1rem;
+        }
+
+        /* services section */
+
+        #services {
+            display: flex;
+            padding: 0.5em;
+            flex-direction: column;
+        }
+
+        .services-container {
+            position: relative;
+
+        }
+
+        .services-container::before {
+            content: "";
+            background: url('choco_bg11.jpg') no-repeat center center/cover;
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.9;
+        }
+
+        h1#service-heading {
+            color: lightyellow;
+            text-shadow: 10px 1px 30px rgb(255, 225, 0);
+            background-color: rgba(92, 0, 0, 0.269);
+            border-radius: 0% 0% 20% 20%/80%
+        }
+
+        #services .box {
+            border: 5px solid rgb(86, 13, 0);
+            color: rgb(120, 18, 0);
+            padding: 1em 2em;
+            margin: 1.5em;
+            border-radius: 10px;
+            border-radius: 50% 20% / 10% 40%;
+            background-color: rgba(250, 250, 210, 0.842);
+            box-shadow: 10px 10px 10px black;
+        }
+
+        #services .box:hover {
+            color: lightyellow;
+            background-color: rgba(66, 20, 20, 0.708);
+            border: 6px solid rgb(255, 254, 180);
+        }
+
+        #services .box img {
+            display: block;
+            height: 9em;
+            margin: auto;
+            border-radius: 100px;
+            border-radius: 50% 20% / 10% 40%;
+            box-shadow: 10px 10px 10px black;
+            /* border-radius: 10% 30% 50% 70%;     */
+
+        }
+
+        #services .box p {
+            /* color: rgb(120, 18, 0); */
+            font-weight: bold;
+            text-shadow: 1px 1px 10px rgb(255, 225, 0);
+        }
+
+        #services .box p:hover {
+            color: lightyellow;
+        }
+
+        /* client section */
+
+        #client-section {
+            position: relative;
+            height: 100%;
+        }
+
+        #client-section::before {
+            content: "";
+            background: url('choco_bg10.jpg') no-repeat center center/cover;
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.8;
+        }
+
+        #clients {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        #client-section h1 {
+            color: lightyellow;
+            background-color: rgba(65, 17, 0, 0.228);
+            border-radius: 0% 0% 20% 20%/80%;
+            margin-bottom: 0.8em;
+        }
+
+        .client-item {
+            padding: 1em;
+        }
+
+        #clients img {
+            height: 7em;
+            border-radius: 10% 30% 50% 70%;
+            box-shadow: 10px 10px 10px rgb(0, 0, 0);
+        }
+
+        /* contact section */
+
+        #contact {
+            position: relative;
+        }
+
+        #contact::before {
+            content: '';
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.95;
+            background: url('choco_tele.jpg') no-repeat center center/cover;
+        }
+
+        /* contact section */
+        #contact h1 {
+            color: rgb(84, 0, 0);
+            background-color: rgba(250, 250, 210, 0.205);
+            border-radius: 0% 0% 20% 20%/80%;
+            margin-bottom: 1em;
+        }
+
+        #contact-box,
+        #contact-box div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-bottom: 1em;
+            /* margin-left: 0.5em; */
+        }
+
+        #contact-box form {
+            width: 90%;
+        }
+
+        #contact-box label,
+        button {
+            font-size: 1.3em;
+            font-weight: bold;
+            color: rgb(101, 1, 1);
+            text-shadow: 1px 1px 3px rgb(255, 225, 0);
+            margin-right: 2em;
+
+        }
+
+        .form-group label {
+            display: block;
+        }
+
+        #contact-box input,
+        #contact-box textarea {
+            width: 100%;
+            padding: 1em;
+            /* margin: 1px; */
+            color: rgb(101, 1, 1);
+            font-size: 0.9em;
+            font-weight: bold;
+            border-radius: 30px;
+            border: 5px solid rgb(101, 0, 0);
+            background-color: rgba(248, 248, 199, 0.9);
+            box-shadow: 10px 10px 10px rgb(0, 0, 0);
+        }
+
+        #contact-box button {
+            width: 30%;
+            padding: 0.5rem;
+            margin: 3px;
+            border-radius: 30px;
+            border: 5px solid rgb(101, 0, 0);
+            background-color: rgba(248, 248, 199, 0.9);
+            box-shadow: 10px 10px 10px rgb(0, 0, 0);
+        }
+
+        /* footer */
+        footer {
+            background-color: black;
+            color: lightyellow;
+            padding: 10px 20px;
+            font-size: 20px;
+            text-shadow: 1px 1px 10px rgb(255, 225, 0);
+        }
+
+        /* utility class */
+        .h-primary {
+            font-size: 2rem;
+            padding: 0.4em;
+            text-shadow: 1px 1px 10px rgb(255, 225, 0);
+            /* font-family: ; */
+        }
+
+        .h-secondary {
+            font-size: 1.3rem;
+            padding: 12px;
+            /* color: rgb(120, 18, 0); */
+            /* font-family: ; */
+        }
+
+        .h-secondary:hover {
+            color: lightyellow;
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        .btn {
+            padding: 6px 25px;
+            margin: 20px;
+            border: 6px solid rgb(62, 0, 0);
+            border-radius: 50% 20% / 10% 40%;
+            background-color: rgba(255, 255, 224, 0.735);
+            text-shadow: 10px 1px 30px rgb(255, 225, 0);
+            color: rgb(82, 0, 0);
+            font-size: 1.5rem;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            color: lightyellow;
+            background-color: rgba(55, 0, 0, 0.546);
+            border: 6px solid rgb(255, 254, 180);
+        }
+    </style> -->
+</head>
+
+<body>
+    <div id="stick">
+        <nav id="navbar">
+            <div id="logo">
+                <img src="choco_bg12.jpg" alt="YourFavoriteChocolatte">
+            </div>
+
+            <div>
+                <ul>
+                    <li class="item"><a href="#home">Home</a></li>
+                    <hr>
+                    <li class="item"><a href="#services-container">Services</a></li>
+                    <hr>
+                    <!-- <li class="item"><a href="">About</a></li> -->
+                    <hr>
+                    <li class="item"><a href="#client-section">Our Clients</a></li>
+                    <hr>
+                    <li class="item"><a href="#contact">Contact Us</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <section id="home">
+        <h1 class="h-primary">Welcome to Our Chocolate Catalogue !!!</h1>
+        <p>Chocolate is a delectable and irresistible treat enjoyed by millions around the world. Its rich, velvety
+            texture and delightful sweetness captivate our taste buds and bring a moment of pure bliss.</p>
+        <p>Whether it's a luscious dark chocolate bar, a creamy milk chocolate truffle, or the delicate allure of white
+            chocolate, there's a variety to suit every palate.</p>
+        <button class="btn">Explore Now</button>
+    </section>
+
+    <section id="services-container">
+        <h1 class="h-primary center" id="service-heading">Our Services</h1>
+        <div id="services">
+            <div class="box">
+                <img src="choco2.jpg" alt="chocolate order">
+                <h2 class="h-secondary center">Order Chocolate</h2>
+                <p class="center">Indulge in the rich allure of chocolate with a simple click, as ordering your favorite
+                    confections has never been more delightful or convenient. Savor the anticipation as you await the
+                    heavenly arrival of your chocolatey treasures, ready to ignite your taste buds with pure bliss.</p>
+            </div>
+
+            <div class="box">
+                <img src="choco3.jpg" alt="Custom made Chocolate">
+                <h2 class="h-secondary center">Custom Made Chocolate</h2>
+                <p class="center">Elevate your chocolate experience with custom-made creations that are meticulously
+                    crafted to satisfy your unique palate and preferences. From personalized flavor combinations to
+                    intricately designed shapes, indulge in the artistry of custom-made chocolates that are as
+                    delightful to behold.</p>
+            </div>
+
+            <div class="box">
+                <img src="choco4.jpg" alt="chocolate order">
+                <h2 class="h-secondary center">Gift Chocolate</h2>
+                <p class="center">Unlock the key to heartwarming gestures with the timeless charm of gifting chocolates,
+                    a universally cherished expression of love and appreciation. Wrap your sentiments in delectable
+                    sweetness, and watch smiles bloom as you present the perfect gift that is sure to delight and
+                    enchant.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="client-section">
+        <h1 class="h-primary center">Our Clients</h1>
+        <div id="clients">
+            <div class="client-item">
+                <img src="choco_brand.jpg" alt="client choco">
+            </div>
+
+            <div class="client-item">
+                <img src="choco_brand1.jpg" alt="client choco">
+            </div>
+
+            <div class="client-item">
+                <img src="choco_brand2.jpg" alt="client choco">
+            </div>
+
+            <div class="client-item">
+                <img src="choco_brand3.jpg" alt="client choco">
+            </div>
+
+            <div class="client-item">
+                <img src="choco_brand4.jpg" alt="client choco">
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h1 class="h-primary center">Contact Us</h1>
+        <div id="contact-box">
+            <form action="">
+
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your Name">
+                </div>
+                <div class="form-group">
+                    <label for="city">City:</label>
+                    <input type="text" id="city" name="name" placeholder="Enter your City">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="name" placeholder="Enter your Email">
+                </div>
+                <div class="form-group">
+                    <label for="mobile">Moble:</label>
+                    <input type="number" id="mobile" name="name" placeholder="Enter your Mobile No.">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea name="name" id="message" cols="30" rows="10"></textarea>
+                </div>
+                <div class="form-group">
+                    <button>Submit</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="center">
+            Copyright &copy; All rights reserved!
+        </div>
+    </footer>
+</body>
+
+</html>

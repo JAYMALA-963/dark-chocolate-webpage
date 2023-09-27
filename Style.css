@@ -1,0 +1,338 @@
+/* css reset rules */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Emilys Candy', cursive;
+    text-shadow: 1px 1px 30px rgb(255, 225, 0);
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* Navigation bar */
+#stick{
+    top: 0px;
+    position: sticky;
+    z-index: 9;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#navbar::before {
+    content: "";
+    background-color: rgb(51, 0, 0);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.9;
+    top: 0px;
+    left: 0px;
+}
+
+/* navigation bar: logo and image */
+
+#logo {
+    margin: 6px 34px;
+}
+
+#logo img {
+    height: 70px;
+    width: 70px;
+    border-radius: 300px;
+}
+
+/* navigation bar: list styling */
+
+#navbar ul {
+    display: flex;
+}
+
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1.5rem;
+}
+
+#navbar ul li a {
+    color: lightyellow;
+    display: block;
+    padding: 3px 32px;
+    border-radius: 20px;
+    text-decoration: none;
+    text-shadow: 1px 1px 10px rgb(255, 225, 0);
+}
+
+#navbar ul li a:hover {
+    color: rgb(111, 0, 0);
+    background-color: rgba(255, 255, 255, 0.721);
+    display: block;
+    padding: 3px 32px;
+    border-radius: 20px;
+    border-radius: 450px 10px / 500px;
+    text-decoration: none;
+}
+
+/* Home Section */
+
+#home {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3px 300px;
+    height: 99vh;
+}
+
+#home::before {
+    content: "";
+    background: url('choco_bg7.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.9;
+    top: 0px;
+    left: 0px;
+}
+
+#home h1 {
+    color: lightyellow;
+    text-align: center;
+    margin-top: 100px;
+}
+
+#home p {
+    color: lightyellow;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+/* services section */
+
+#services {
+    display: flex;
+    padding: 35px;
+}
+
+#services-container{
+    position: relative;
+}
+
+#services-container::before {
+    content: "";
+    background: url('choco_bg11.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.9;
+}
+
+h1#service-heading {
+    color: lightyellow;
+    text-shadow: 10px 1px 30px rgb(255, 225, 0);
+    background-color: rgba(92, 0, 0, 0.269);
+    border-radius: 0% 0%  20% 20%/80%
+
+}
+
+#services .box {
+    border: 5px solid rgb(86, 13, 0);
+    color: rgb(120, 18, 0);
+    padding: 19px;
+    margin: 10px;
+    border-radius: 10px;
+    border-radius: 50% 20% / 10% 40%;
+    background-color: rgba(250, 250, 210, 0.842);
+    box-shadow: 10px 10px 10px black;
+}
+
+#services .box:hover{
+    color: lightyellow;
+    background-color: rgba(66, 20, 20, 0.708);
+    border: 6px solid rgb(255, 254, 180);
+}
+
+#services .box img {
+    display: block;
+    height: 160px;
+    margin: auto;
+    border-radius: 100px;
+    border-radius: 50% 20% / 10% 40%;
+    box-shadow: 10px 10px 10px black;
+    /* border-radius: 10% 30% 50% 70%;     */
+
+}
+
+#services .box p {
+    /* color: rgb(120, 18, 0); */
+    font-weight: bold;
+    text-shadow: 1px 1px 10px rgb(255, 225, 0);
+}
+
+#services .box p:hover{
+    color: lightyellow;
+}
+/* client section */
+
+#client-section {
+    position: relative;
+    height: 350px;
+}
+
+#client-section::before {
+    content: "";
+    background: url('choco_bg10.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.8;
+}
+
+#clients {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#client-section h1 {
+    color: lightyellow;
+    background-color: rgba(65, 17, 0, 0.228);
+    border-radius: 0% 0%  20% 20%/80%;
+    margin-bottom: 20px;
+}
+
+.client-item {
+    padding: 34px;
+}
+
+#clients img {
+    height: 150px;
+    border-radius: 10% 30% 50% 70%;
+    box-shadow: 10px 10px 10px rgb(0, 0, 0);
+}
+
+/* contact section */
+
+#contact {
+    position: relative;
+}
+
+#contact::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.95;
+    background: url('choco_tele.jpg') no-repeat center center/cover;
+}
+
+/* contact section */
+#contact h1{
+    color: rgb(84, 0, 0);
+    background-color: rgba(250, 250, 210, 0.205);
+    border-radius: 0% 0%  20% 20%/80%;
+    margin-bottom: 40px;
+}
+#contact-box, #contact-box div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+
+#contact-box form{
+    width: 50%;
+}
+
+#contact-box label, button{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: rgb(101, 1, 1);
+    text-shadow: 1px 1px 3px rgb(255, 225, 0);
+    margin-right:10px;
+
+}
+
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 1rem;
+    margin: 1px;
+    color: rgb(101, 1, 1);
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 30px;
+    border: 5px solid rgb(101, 0, 0);
+    background-color: rgba(248, 248, 199, 0.9);
+    box-shadow: 10px 10px 10px rgb(0, 0, 0);
+}
+
+#contact-box button{
+    width: 30%;
+    padding: 0.5rem;
+    margin: 3px;
+    border-radius: 30px;
+    border: 5px solid rgb(101, 0, 0);
+    background-color: rgba(248, 248, 199, 0.9);
+    box-shadow: 10px 10px 10px rgb(0, 0, 0);
+}
+/* footer */
+footer{
+    background-color: black;
+    color: lightyellow;
+    padding: 10px 20px;
+    font-size: 20px;
+    text-shadow: 1px 1px 10px rgb(255, 225, 0);
+}
+/* utility class */
+.h-primary {
+    font-size: 3.2rem;
+    padding: 12px;
+    text-shadow: 1px 1px 10px rgb(255, 225, 0);
+    /* font-family: ; */
+}
+
+.h-secondary {
+    font-size: 1.3rem;
+    padding: 12px;
+    /* color: rgb(120, 18, 0); */
+    /* font-family: ; */
+}
+
+.h-secondary:hover{
+    color: lightyellow;
+}
+.center {
+    text-align: center;
+}
+
+.btn {
+    padding: 6px 25px;
+    margin: 20px;
+    border: 6px solid rgb(62, 0, 0);
+    border-radius: 50% 20% / 10% 40%;
+    background-color: rgba(255, 255, 224, 0.735);
+    text-shadow: 10px 1px 30px rgb(255, 225, 0);
+    color: rgb(82, 0, 0);
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+.btn:hover{
+    color: lightyellow;
+    background-color: rgba(55, 0, 0, 0.546);
+    border: 6px solid rgb(255, 254, 180);
+}
